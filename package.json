@@ -13,7 +13,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint --ext .js,.vue .",
-    "fix": "eslint --ext .js,.vue . --fix"
+    "fix": "eslint --ext .js,.vue . --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "nuxt": "^3.17.4",
@@ -28,6 +29,13 @@
     "globals": "^16.1.0",
     "postcss": "8.4.35",
     "tailwindcss": "3.4.1",
-    "vue-eslint-parser": "^10.1.3"
+    "vue-eslint-parser": "^10.1.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix"
+    ]
   }
 }
