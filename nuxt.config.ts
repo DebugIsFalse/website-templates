@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   modules: [
     '@nuxtjs/tailwindcss',
+    '@nuxt/eslint'
   ],
   postcss: {
     plugins: {
